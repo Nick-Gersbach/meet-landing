@@ -563,7 +563,7 @@ Media Queries
     flex-wrap: wrap;
   }
   #gallery img {
-    width: 160px;
+    width: 90%;
     padding: 0 15px;
   }
   #modern-use {
