@@ -1,0 +1,637 @@
+/* 
+
+
+
+
+
+
+Global Styles
+
+
+
+
+
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 
+
+
+
+
+
+Logo
+
+
+
+
+
+*/
+.logo {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* 
+
+
+
+
+
+header
+
+
+
+
+
+*/
+.mobile-showcase-pics {
+  display: none;
+}
+
+header {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .picture-group-left {
+  margin-left: -2rem;
+}
+header .group-chat-text {
+  text-align: center;
+}
+header .group-chat-text h1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  line-height: 1.1;
+}
+header .group-chat-text p {
+  color: #87879d;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+header .picture-group-right {
+  margin-right: -2rem;
+}
+header .teal-btn {
+  background: #4d96a9;
+  border-radius: 29px;
+  border: none;
+  padding: 12px;
+  width: 200px;
+  margin-right: 10px;
+}
+header .teal-btn a {
+  color: #fafafa;
+  font-size: 18px;
+  font-weight: 700;
+}
+header .teal-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+header .teal-btn span {
+  color: #8fe3f9;
+}
+header .purple-btn {
+  background: #855fb1;
+  border-radius: 29px;
+  border: none;
+  padding: 12px;
+  width: 150px;
+  margin-left: 10px;
+}
+header .purple-btn a {
+  color: #fafafa;
+  font-size: 18px;
+  font-weight: 700;
+}
+header .purple-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* 
+
+
+
+
+
+Gallery
+
+
+
+
+
+*/
+#gallery {
+  margin-top: 16rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#gallery .images-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+#gallery img {
+  width: 330px;
+  padding: 0 15px;
+}
+
+/* 
+
+
+
+
+
+Modern Use
+
+
+
+
+
+*/
+#modern-use {
+  margin-top: 5rem;
+  text-align: center;
+}
+#modern-use h3 {
+  color: #4d96a9;
+  margin-bottom: 1rem;
+}
+#modern-use h2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+#modern-use p {
+  color: #87879d;
+  width: 40%;
+  margin: 0 auto;
+}
+
+/* 
+
+
+
+
+
+Footer
+
+
+
+
+
+*/
+footer {
+  background: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)),
+    url(./img/image-footer.jpg) no-repeat center center/cover;
+  height: 45vh;
+  color: white;
+  margin-top: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 4.5rem;
+}
+footer h2 {
+  width: 30%;
+}
+footer p {
+  width: 26%;
+}
+footer .purple-btn {
+  background: #855fb1;
+  border-radius: 29px;
+  border: none;
+  padding: 12px;
+  width: 200px;
+  margin-right: 10px;
+}
+footer .purple-btn a {
+  color: #fafafa;
+  font-size: 18px;
+  font-weight: 700;
+}
+footer .purple-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* 
+
+
+
+
+
+Media Queries
+
+
+
+
+
+*/
+@media screen and (min-device-width: 900px) and (max-device-width: 1180px) {
+  .mobile-showcase-pics {
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .mobile-showcase-pics img {
+    width: 95%;
+  }
+  header {
+    margin-top: 3rem;
+    display: block;
+  }
+  header .picture-group-left {
+    display: none;
+  }
+  header .group-chat-text h1 {
+    width: 90%;
+  }
+  header .group-chat-text p {
+    width: 60%;
+  }
+  header .picture-group-right {
+    display: none;
+  }
+  header .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .btn-container .teal-btn {
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  header .purple-btn {
+    margin-left: 10px;
+  }
+  #gallery {
+    margin-top: 8rem;
+  }
+  #gallery .images-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #gallery img {
+    width: 220px;
+    padding: 0 15px;
+  }
+  #modern-use {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  #modern-use h3 {
+    color: #4d96a9;
+    margin-bottom: 1rem;
+  }
+  #modern-use h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 32%;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-size: 32px;
+  }
+  #modern-use p {
+    color: #87879d;
+    width: 55%;
+    margin: 0 auto;
+  }
+  footer {
+    background: linear-gradient(
+        rgba(77, 150, 168, 0.9),
+        rgba(77, 150, 168, 0.9)
+      ),
+      url(./img/image-footer.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    margin-top: 8rem;
+  }
+  footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 4.5rem;
+  }
+  footer h2 {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  footer p {
+    width: 80%;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  footer .purple-btn {
+    background: #855fb1;
+    border-radius: 29px;
+    border: none;
+    padding: 12px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  footer .purple-btn a {
+    color: #fafafa;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  footer .purple-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 900px) {
+  .mobile-showcase-pics {
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .mobile-showcase-pics img {
+    width: 95%;
+  }
+  header {
+    margin-top: 3rem;
+    display: block;
+  }
+  header .picture-group-left {
+    display: none;
+  }
+  header .group-chat-text h1 {
+    width: 90%;
+  }
+  header .group-chat-text p {
+    width: 60%;
+  }
+  header .picture-group-right {
+    display: none;
+  }
+  header .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header .btn-container .teal-btn {
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  header .purple-btn {
+    margin-left: 10px;
+  }
+  #gallery {
+    margin-top: 8rem;
+  }
+  #gallery .images-container {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  #gallery img {
+    width: 90%;
+    padding: 15px 0px;
+    margin: 0 auto;
+  }
+  #modern-use {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  #modern-use h3 {
+    color: #4d96a9;
+    margin-bottom: 1rem;
+  }
+  #modern-use h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-size: 32px;
+  }
+  #modern-use p {
+    color: #87879d;
+    width: 75%;
+    margin: 0 auto;
+  }
+  footer {
+    background: linear-gradient(
+        rgba(77, 150, 168, 0.9),
+        rgba(77, 150, 168, 0.9)
+      ),
+      url(./img/image-footer.jpg) no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    margin-top: 8rem;
+  }
+  footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 4.5rem;
+  }
+  footer h2 {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  footer p {
+    width: 80%;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  footer .purple-btn {
+    background: #855fb1;
+    border-radius: 29px;
+    border: none;
+    padding: 12px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  footer .purple-btn a {
+    color: #fafafa;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  footer .purple-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-showcase-pics {
+    display: block;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .mobile-showcase-pics img {
+    width: 95%;
+  }
+  header {
+    margin-top: 3rem;
+    display: block;
+  }
+  header .picture-group-left {
+    display: none;
+  }
+  header .group-chat-text h1 {
+    width: 90%;
+    font-size: 40px;
+  }
+  header .group-chat-text p {
+    width: 90%;
+  }
+  header .picture-group-right {
+    display: none;
+  }
+  header .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  header .btn-container .teal-btn {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  header .purple-btn {
+    margin-left: 0px;
+  }
+  #gallery {
+    margin-top: 8rem;
+  }
+  #gallery .images-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #gallery img {
+    width: 160px;
+    padding: 0 15px;
+  }
+  #modern-use {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  #modern-use h3 {
+    color: #4d96a9;
+    margin-bottom: 1rem;
+  }
+  #modern-use h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-size: 32px;
+  }
+  #modern-use p {
+    color: #87879d;
+    width: 85%;
+    margin: 0 auto;
+  }
+  footer {
+    background: linear-gradient(
+        rgba(77, 150, 168, 0.9),
+        rgba(77, 150, 168, 0.9)
+      ),
+      url(./img/image-footer.jpg) no-repeat center center/cover;
+    height: 90vh;
+    color: white;
+    margin-top: 6rem;
+  }
+  footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 4.5rem;
+  }
+  footer h2 {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  footer p {
+    width: 80%;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  footer .purple-btn {
+    background: #855fb1;
+    border-radius: 29px;
+    border: none;
+    padding: 12px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  footer .purple-btn a {
+    color: #fafafa;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  footer .purple-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+}
